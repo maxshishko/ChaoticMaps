@@ -9,6 +9,7 @@ class LogisticMap : public ChaoticMap1D
 {
     double param = 3.9999;
 public:
+    LogisticMap();
     LogisticMap(double init);
     LogisticMap(double init, double param);
 

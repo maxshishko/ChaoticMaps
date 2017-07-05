@@ -19,6 +19,11 @@ void LogisticMap::setX(double value)
     x = value;
 }
 
+LogisticMap::LogisticMap()
+{
+    setX(0);
+}
+
 LogisticMap::LogisticMap(double init)
 {
     setX(init);

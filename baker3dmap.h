@@ -8,6 +8,7 @@
 class Baker3DMap : public ChaoticMap3D
 {
 public:
+    Baker3DMap(){}
     Baker3DMap(double x, double y, double z);
 
     void next();

@@ -8,6 +8,7 @@
 class TentMap : public ChaoticMap1D
 {
 public:
+    TentMap(){}
     TentMap(double init);
 
     void setX(double value);

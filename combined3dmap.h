@@ -10,6 +10,7 @@ class Combined3DMap : public ChaoticMap3D
     ChaoticMap1D *ymap;
     ChaoticMap1D *zmap;
 public:
+    Combined3DMap(){}
     Combined3DMap(ChaoticMap1D* xmap, ChaoticMap1D* ymap, ChaoticMap1D* zmap);
 
     void next();

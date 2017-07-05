@@ -8,6 +8,7 @@ class PWLCM : public ChaoticMap1D
 {
     double param = 0.3333;
 public:
+    PWLCM(){}
     PWLCM(double init);
     PWLCM(double init, double param);
 
