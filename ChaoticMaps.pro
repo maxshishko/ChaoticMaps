@@ -40,7 +40,8 @@ HEADERS += \
     logisticmap.h \
     lorenzmap.h \
     pwlcm.h \
-    tentmap.h
+    tentmap.h \
+    maps.h
 
 unix {
     target.path = /usr/lib
