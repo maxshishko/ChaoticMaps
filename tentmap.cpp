@@ -20,3 +20,10 @@ double TentMap::next()
         x = 2.*(1.-x);
     return x;
 }
+
+void TentMap::setRandomInit()
+{
+    srand(time(NULL));
+    x = ((double)rand())/((double)RAND_MAX);
+
+}

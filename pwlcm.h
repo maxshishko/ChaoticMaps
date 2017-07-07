@@ -3,16 +3,20 @@
 
 #include "chaoticmap1d.h"
 #include <cmath>
+#include <ctime>
+#include <cstdlib>
 
 class PWLCM : public ChaoticMap1D
 {
     double param = 0.3333;
 public:
-    PWLCM(){}
+    PWLCM(){setRandomInit();}
     PWLCM(double init);
     PWLCM(double init, double param);
 
     double next();
+    void setRandomInit();
+
     double pwlcm(double x);
 
     double getParam() const;

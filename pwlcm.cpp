@@ -38,6 +38,12 @@ double PWLCM::next()
     return x;
 }
 
+void PWLCM::setRandomInit()
+{
+    srand(time(NULL));
+    x = ((double)rand())/((double)RAND_MAX);
+}
+
 double PWLCM::pwlcm(double value)
 {
     if(value>=0 && value < param)

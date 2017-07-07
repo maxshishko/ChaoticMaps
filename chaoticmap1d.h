@@ -10,6 +10,7 @@ public:
     ChaoticMap1D(){}
     ChaoticMap1D(double init);
     virtual double next() = 0;
+    virtual void setRandomInit() = 0;
 
     double getX() const;
     void setX(double value);

@@ -21,7 +21,7 @@ void LogisticMap::setX(double value)
 
 LogisticMap::LogisticMap()
 {
-    setX(0);
+    setRandomInit();
 }
 
 LogisticMap::LogisticMap(double init)
@@ -39,4 +39,10 @@ double LogisticMap::next()
 {
     x = param*x*(1-x);
     return x;
+}
+
+void LogisticMap::setRandomInit()
+{
+    srand(time(NULL));
+    x = static_cast<double>(rand())/static_cast<double>(RAND_MAX);
 }

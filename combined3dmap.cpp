@@ -15,6 +15,13 @@ void Combined3DMap::next()
     z = zmap->next();
 }
 
+void Combined3DMap::setRandomInit()
+{
+    xmap->setRandomInit();
+    ymap->setRandomInit();
+    zmap->setRandomInit();
+}
+
 void Combined3DMap::setX(double value)
 {
     xmap->setX(value);

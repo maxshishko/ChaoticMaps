@@ -12,6 +12,7 @@ public:
     ChaoticMap3D();
 
     virtual void next() = 0;
+    virtual void setRandomInit() = 0;
 
     double getX() const;
     void setX(double value);
