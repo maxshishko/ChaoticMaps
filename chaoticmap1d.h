@@ -5,7 +5,7 @@
 class ChaoticMap1D
 {
 protected:
-    double x;
+    double x = 0;
 public:
     ChaoticMap1D(){}
     ChaoticMap1D(double init);
@@ -13,7 +13,7 @@ public:
     virtual void setRandomInit() = 0;
 
     double getX() const;
-    void setX(double value);
+    virtual void setX(double value);
 };
 
 #endif // CHAOTICMAP_H

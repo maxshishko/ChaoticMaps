@@ -5,21 +5,21 @@
 class ChaoticMap3D
 {
 protected:
-    double x;
-    double y;
-    double z;
+    double x = 0;
+    double y = 0;
+    double z = 0;
 public:
     ChaoticMap3D();
 
     virtual void next() = 0;
     virtual void setRandomInit() = 0;
 
-    double getX() const;
-    void setX(double value);
-    double getY() const;
-    void setY(double value);
-    double getZ() const;
-    void setZ(double value);
+    virtual double getX() const;
+    virtual void setX(double value);
+    virtual double getY() const;
+    virtual void setY(double value);
+    virtual double getZ() const;
+    virtual void setZ(double value);
 };
 
 #endif // CHAOTICMAP3D_H

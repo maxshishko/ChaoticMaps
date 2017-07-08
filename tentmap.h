@@ -9,7 +9,7 @@
 class TentMap : public ChaoticMap1D
 {
 public:
-    TentMap(){setRandomInit();}
+    TentMap(){}
     TentMap(double init);
 
     void setX(double value);

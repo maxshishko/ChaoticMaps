@@ -21,7 +21,6 @@ void LogisticMap::setX(double value)
 
 LogisticMap::LogisticMap()
 {
-    setRandomInit();
 }
 
 LogisticMap::LogisticMap(double init)

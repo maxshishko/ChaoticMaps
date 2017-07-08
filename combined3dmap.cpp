@@ -20,6 +20,9 @@ void Combined3DMap::setRandomInit()
     xmap->setRandomInit();
     ymap->setRandomInit();
     zmap->setRandomInit();
+    x = xmap->getX();
+    y = ymap->getX();
+    z = zmap->getX();
 }
 
 void Combined3DMap::setX(double value)
