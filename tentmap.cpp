@@ -23,7 +23,6 @@ double TentMap::next()
 
 void TentMap::setRandomInit()
 {
-    srand(time(NULL));
     x = ((double)rand())/((double)RAND_MAX);
 
 }

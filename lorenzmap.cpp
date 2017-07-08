@@ -16,8 +16,7 @@ void LorenzMap::next()
 
 void LorenzMap::setRandomInit()
 {
-    srand(time(NULL));
-    x = (double)rand()+((double)rand())/((double)RAND_MAX);
-    y = (double)rand()+((double)rand())/((double)RAND_MAX);
-    z = (double)rand()+((double)rand())/((double)RAND_MAX);
+    x = 3.+((double)rand())/((double)RAND_MAX);
+    y = 1.5+((double)rand())/((double)RAND_MAX);
+    z = 15.+((double)rand())/((double)RAND_MAX);
 }

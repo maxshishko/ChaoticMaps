@@ -3,7 +3,6 @@
 
 #include "chaoticmap1d.h"
 #include <cmath>
-#include <ctime>
 #include <cstdlib>
 
 class PWLCM : public ChaoticMap1D

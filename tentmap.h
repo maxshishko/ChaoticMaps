@@ -2,7 +2,6 @@
 #define TENTMAP_H
 
 #include <cmath>
-#include <ctime>
 #include <cstdlib>
 
 #include "chaoticmap1d.h"

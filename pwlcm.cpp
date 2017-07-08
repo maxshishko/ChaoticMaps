@@ -40,7 +40,6 @@ double PWLCM::next()
 
 void PWLCM::setRandomInit()
 {
-    srand(time(NULL));
     x = ((double)rand())/((double)RAND_MAX);
 }
 

@@ -35,7 +35,6 @@ void Baker3DMap::next()
 
 void Baker3DMap::setRandomInit()
 {
-    srand(time(NULL));
     x = static_cast<double>(rand())/static_cast<double>(RAND_MAX);
     y = static_cast<double>(rand())/static_cast<double>(RAND_MAX);
     z = static_cast<double>(rand())/static_cast<double>(RAND_MAX);

@@ -2,7 +2,6 @@
 #define LORENZMAP_H
 
 #include <cmath>
-#include <ctime>
 #include <cstdlib>
 
 #include "chaoticmap3d.h"
