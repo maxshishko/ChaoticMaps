@@ -21,11 +21,6 @@ void PWLCM::setX(double value)
     x = value;
 }
 
-PWLCM::PWLCM(double init)
-{
-    setX(init);
-}
-
 PWLCM::PWLCM(double init, double param)
 {
     setX(init);
@@ -40,7 +35,7 @@ double PWLCM::next()
 
 void PWLCM::setRandomInit()
 {
-    x = ((double)rand())/((double)RAND_MAX);
+    x = static_cast<double>(rand())/ static_cast<double>(RAND_MAX);
 }
 
 double PWLCM::pwlcm(double value)
@@ -52,4 +47,8 @@ double PWLCM::pwlcm(double value)
     if(value >=0.5 && value < 1)
         return pwlcm(1-value);
     return value;
+}
+
+PWLCM::PWLCM() {
+    setRandomInit();
 }

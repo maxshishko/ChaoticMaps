@@ -9,18 +9,18 @@ class PWLCM : public ChaoticMap1D
 {
     double param = 0.3333;
 public:
-    PWLCM(){}
-    PWLCM(double init);
-    PWLCM(double init, double param);
+    PWLCM();
+    PWLCM(double init, double param = 0.3333);
 
-    double next();
-    void setRandomInit();
+
+    double next() override ;
+    void setRandomInit() override ;
 
     double pwlcm(double x);
 
     double getParam() const;
     void setParam(double value);
-    void setX(double value);
+    void setX(double value) override ;
 };
 
 #endif // PWLCM_H
