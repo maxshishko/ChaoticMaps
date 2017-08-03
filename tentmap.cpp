@@ -23,6 +23,10 @@ double TentMap::next()
 
 void TentMap::setRandomInit()
 {
-    x = ((double)rand())/((double)RAND_MAX);
+    x = static_cast<double>(rand())/ static_cast<double>(RAND_MAX);
 
+}
+
+TentMap::TentMap() {
+    setRandomInit();
 }

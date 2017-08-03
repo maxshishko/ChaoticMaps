@@ -9,12 +9,13 @@
 class TentMap : public ChaoticMap1D
 {
 public:
-    TentMap(){}
-    TentMap(double init);
+    TentMap();
 
-    void setX(double value);
-    double next();
-    void setRandomInit();
+    explicit TentMap(double init);
+
+    void setX(double value) override ;
+    double next() override ;
+    void setRandomInit() override ;
 };
 
 #endif // TENTMAP_H
