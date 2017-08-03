@@ -8,17 +8,15 @@
 
 class LogisticMap : public ChaoticMap1D
 {
-    double param = 3.9999;
+    double param;
 public:
-    LogisticMap();
-    LogisticMap(double init);
-    LogisticMap(double init, double param);
+    explicit LogisticMap(double init, double param = 3.9999);
 
-    double next();
-    void setRandomInit();
+    double next() override ;
+    void setRandomInit() override ;
     double getParam() const;
     void setParam(double value);
-    void setX(double value);
+    void setX(double value) override ;
 };
 
 #endif // LOGISTIC_H
