@@ -1,16 +1,18 @@
-#ifndef COMBINEDDMAP_H
-#define COMBINEDDMAP_H
+#ifndef COMBINED3DMAP_H
+#define COMBINED3DMAP_H
 
 #include "chaoticmap3d.h"
 #include "chaoticmap1d.h"
 
 class Combined3DMap : public ChaoticMap3D
 {
-    ChaoticMap1D* xmap;
-    ChaoticMap1D* ymap;
-    ChaoticMap1D* zmap;
+    using uptrChaotiMap1D = std::unique_ptr<ChaoticMap1D>;
+
+    uptrChaotiMap1D xmap;
+    uptrChaotiMap1D ymap;
+    uptrChaotiMap1D zmap;
 public:
-    Combined3DMap(ChaoticMap1D* xmap, ChaoticMap1D* ymap, ChaoticMap1D* zmap);
+    Combined3DMap(uptrChaotiMap1D xmap, uptrChaotiMap1D ymap, uptrChaotiMap1D zmap);
 
     void next();
 
@@ -21,4 +23,4 @@ public:
     void setZ(double value);
 };
 
-#endif // COMBINEDDMAP_H
+#endif // COMBINED3DMAP_H

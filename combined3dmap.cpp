@@ -1,6 +1,6 @@
 #include "combined3dmap.h"
 
-Combined3DMap::Combined3DMap(ChaoticMap1D *xmap, ChaoticMap1D *ymap, ChaoticMap1D* zmap):
+Combined3DMap::Combined3DMap(uptrChaotiMap1D xmap, uptrChaotiMap1D ymap, uptrChaotiMap1D zmap):
     xmap(xmap), ymap(ymap), zmap(zmap)
 {
     x = xmap->getX();
