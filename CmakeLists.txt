@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.8)
+project(ChaoticMaps)
+
+set(CMAKE_CXX_STANDARD 14)
+
+set(SOURCE_FILES
+        baker3dmap.cpp
+        baker3dmap.h
+        chaoticmap1d.cpp
+        chaoticmap1d.h
+        chaoticmap3d.cpp
+        chaoticmap3d.h
+        combined3dmap.cpp
+        combined3dmap.h
+        logisticmap.cpp
+        logisticmap.h
+        lorenzmap.cpp
+        lorenzmap.h
+        maps.h
+        pwlcm.cpp
+        pwlcm.h
+        tentmap.cpp
+        tentmap.h)
+
+add_library(ChaoticMaps ${SOURCE_FILES})
