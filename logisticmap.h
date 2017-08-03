@@ -8,8 +8,9 @@
 
 class LogisticMap : public ChaoticMap1D
 {
-    double param;
+    double param = 3.9999;
 public:
+    LogisticMap();
     explicit LogisticMap(double init, double param = 3.9999);
 
     double next() override ;

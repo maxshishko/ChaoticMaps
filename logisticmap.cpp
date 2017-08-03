@@ -35,3 +35,7 @@ void LogisticMap::setRandomInit()
 {
     x = static_cast<double>(rand())/static_cast<double>(RAND_MAX);
 }
+
+LogisticMap::LogisticMap() {
+    setRandomInit();
+}
