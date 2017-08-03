@@ -14,8 +14,8 @@ public:
     LorenzMap(){setRandomInit();}
     LorenzMap(double x, double y, double z);
 
-    void next();
-    void setRandomInit();
+    void next() override ;
+    void setRandomInit() override ;
 };
 
 #endif // LORENZMAP_H
