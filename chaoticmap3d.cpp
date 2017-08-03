@@ -29,8 +29,3 @@ void ChaoticMap3D::setZ(double value)
 {
     z = value;
 }
-
-ChaoticMap3D::ChaoticMap3D()
-{
-
-}
