@@ -12,12 +12,12 @@ public:
     Baker3DMap(){setRandomInit();}
     Baker3DMap(double x, double y, double z);
 
-    void next();
-    void setRandomInit();
+    void next() override ;
+    void setRandomInit() override ;
 
-    void setX(double value);
-    void setY(double value);
-    void setZ(double value);
+    void setX(double value) override ;
+    void setY(double value) override ;
+    void setZ(double value) override ;
 private:
     double toRange(double value);
 };
