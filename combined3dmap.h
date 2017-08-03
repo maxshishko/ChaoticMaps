@@ -3,6 +3,7 @@
 
 #include "chaoticmap3d.h"
 #include "chaoticmap1d.h"
+#include <memory>
 
 class Combined3DMap : public ChaoticMap3D
 {
@@ -12,15 +13,21 @@ class Combined3DMap : public ChaoticMap3D
     uptrChaotiMap1D ymap;
     uptrChaotiMap1D zmap;
 public:
-    Combined3DMap(uptrChaotiMap1D xmap, uptrChaotiMap1D ymap, uptrChaotiMap1D zmap);
+    Combined3DMap(uptrChaotiMap1D &&xmap, uptrChaotiMap1D &&ymap, uptrChaotiMap1D &&zmap);
 
-    void next();
+    void setXmap(uptrChaotiMap1D &&xmap);
 
-    void setRandomInit();
+    void setYmap(uptrChaotiMap1D &&ymap);
 
-    void setX(double value);
-    void setY(double value);
-    void setZ(double value);
+    void setZmap(uptrChaotiMap1D &&zmap);
+
+    void next() override ;
+
+    void setRandomInit() override ;
+
+    void setX(double value) override ;
+    void setY(double value) override ;
+    void setZ(double value) override ;
 };
 
 #endif // COMBINED3DMAP_H

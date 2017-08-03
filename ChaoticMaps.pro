@@ -7,6 +7,8 @@
 TARGET = ChaoticMaps
 TEMPLATE = lib
 
+CONFIG += c++14
+
 DEFINES += CHAOTICMAPS_LIBRARY
 
 SOURCES += \
