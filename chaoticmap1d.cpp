@@ -9,9 +9,3 @@ void ChaoticMap1D::setX(double value)
 {
     x = value;
 }
-
-ChaoticMap1D::ChaoticMap1D(double init):
-    x(init)
-{
-
-}

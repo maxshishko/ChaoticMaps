@@ -1,3 +1,4 @@
 ChaoticMaps.pro
 ChaoticMaps.pro.user
-.idea/*
+.idea/
+cmake-build-debug/
